@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_line - check for a digit
  * @n : number of _ to be printed
