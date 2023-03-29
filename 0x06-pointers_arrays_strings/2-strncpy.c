@@ -7,7 +7,7 @@
  * Return: destination
  */
 
-char *my_strncpy(char *dest, const char *src, size_t n)
+char *_strncpy(char *dest, const char *src, size_t n)
 {
 int i;
 
