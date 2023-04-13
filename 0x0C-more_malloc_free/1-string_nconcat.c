@@ -7,7 +7,7 @@
  *Return:char pointer
  */
 
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *p;
 unsigned int size1 = 0, size2 = 0, i;
