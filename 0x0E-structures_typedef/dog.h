@@ -1,3 +1,11 @@
+#ifndef FILE_DOG
+#define FILE_DOG
+/**
+ * struct dog - structure dog
+ * @name:pointer to char name's dog
+ * @age:float age's dog
+ * @owner:pointer to char owner's dog
+ */
 struct dog
 {
 char *name;
@@ -17,4 +25,4 @@ int _strlen(char *s);
 
 char *_strcpy(char *dest, char *src);
 
-void free_dog(dog_t *d);
+#endif
