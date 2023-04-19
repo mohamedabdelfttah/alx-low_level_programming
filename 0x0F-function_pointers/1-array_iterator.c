@@ -1,8 +1,11 @@
 #include "function_pointers.h"
+
 /**
- *array_iterator -  function takes an array of integers
- *@size:size of array
- *@action:is a pointer to the function you need to use
+ * array_iterator - executes funct
+ * @array: array of elements
+ * @size: array's size
+ * @action: pointer to function
+ * Return: No
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
