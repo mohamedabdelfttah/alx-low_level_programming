@@ -10,13 +10,3 @@ void print_name(char *name, void (*f)(char *))
 {
 f(name);
 }
-/**
- *print - function contains a loop that iterates over each character
- *@str: a char pointer
- */
-
-void print(char *str)
-{
-while (*str)
-_putchar(*str++);
-}
