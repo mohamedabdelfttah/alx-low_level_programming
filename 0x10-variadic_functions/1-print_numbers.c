@@ -1,7 +1,9 @@
 #include "variadic_functions.h"
-
+#include <stdarg.h>
+#include <stdlib.h>
+#include <stdio.h>
 /**
- * print_numbers - a function that prints strings
+ * print_numbers - a function that prints numbers
  * @separator: separator numbers
  * @n: int, number of undefined arguments
  */
