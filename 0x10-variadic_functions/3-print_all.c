@@ -34,10 +34,9 @@ separator = ", ";
 break;
 case 's':
 str = va_arg(args, char *);
-if (str == NULL)
-printf("%s(nil)", separator);
-else
+if (str != NULL)
 printf("%s%s", separator, str);
+printf("%s(nil)", separator);
 separator = ", ";
 break;
 }
@@ -46,4 +45,3 @@ i++;
 printf("\n");
 va_end(args);
 }
-
