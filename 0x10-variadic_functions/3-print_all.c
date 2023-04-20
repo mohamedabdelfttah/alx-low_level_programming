@@ -5,6 +5,7 @@
 /**
  *print_all - prints any type
  *@format: arguments to print
+ * Return: no return.
  */
 
 void print_all(const char * const format, ...)
@@ -34,13 +35,12 @@ separator = ", ";
 break;
 case 's':
 str = va_arg(args, char *);
-if (str != NULL)
+if (!str)
 {
-printf("%s%s", separator, str);
-separator = ", ";
+printf("(nil)");
 break;
 }
-printf("%s(nil)", separator);
+printf("%s%s", separator, str);
 break;
 }
 i++;
