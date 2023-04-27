@@ -13,9 +13,9 @@ size_t count = 0;
 while (h != NULL)
 {
 if (h->str == NULL)
-printf("[0] (nil)\n");
+printf("[%d] %s\n", 0, "(nil)");
 else
-printf("[%u] %s\n", h->len, h->str);
+printf("[%d] %s\n", h->len, h->str);
 h = h->next;
 count++;
 }
