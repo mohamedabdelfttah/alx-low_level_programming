@@ -27,6 +27,6 @@ while (last->next != NULL)
 last = last->next;
 
 last->next = newNode;
-return (newNode);
 }
+return (newNode);
 }
