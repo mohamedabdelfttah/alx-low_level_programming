@@ -21,3 +21,14 @@ if (index == 0)
 free(current);
 return (1);
 }
+for (i = 0; current != NULL && i < index - 1; i++)
+current = current->next;
+
+if (current == NULL || current->next == NULL)
+return (-1);
+
+temp = current->next->next;
+free(current->next);
+current->next = temp;
+return (1);
+}
