@@ -3,6 +3,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 #define BUFFER_SIZE 1024
 
@@ -16,7 +17,7 @@
 int main(int argc, char *argv[])
 {
 int fd_from, fd_to;
-ssize_t n_read, n_written;
+ssize_t n_read;
 char buffer[BUFFER_SIZE];
 
 if (argc != 3)
