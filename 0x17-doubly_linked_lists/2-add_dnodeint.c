@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
- * add_dnodeint -  adds a new node at the beginning of a list
- * @h: a poiinter to the head
+ * add_dnodeint - adds a new node at the beginning of a list
+ * @head: a poiinter to the head
  * @n: the data
  * Return: the address of the new element, or NULL if it failed
  */
@@ -15,7 +15,7 @@ new_node->n = n
 new_node->next = *head;
 new_node->prev = NULL;
 
-if(*head != NULL)
+if (*head != NULL)
 (*head)->prev = new_node;
 
 *head = new_node;
